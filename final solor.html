@@ -1,0 +1,114 @@
+<head>
+    <script src="p5.js"></script>
+    <script src="p5.min.js"></script>
+</head>
+<body>
+    <script>
+    function setup(){
+        createCanvas(500,500);
+    }
+    //mercury
+    let mer=200;
+    let spmer=4.79;
+    //venus
+    let ven=200; 
+    let spven=3.50;
+	//earth
+    let ear=200;
+    let spear=2.98;
+    //mars
+    let mar=200;
+    let spmar=2.41;
+    //jupiter
+    let jup=200;
+    let spjup=1.31;
+    // saturn
+    let sat=200;
+    let spsat=0.97;
+	// neptune
+    let nep=200;
+    let spnep=0.54;
+    //uranus
+    let ura=200;
+    let spura=0.68;
+    function draw(){
+        background(0,0,0);
+        fill(250,0,0);
+        circle(250,250,139.14);
+		// below mercury
+        if(mer>389.699 || mer<110.301){
+			spmer=spmer*-1;
+			
+
+			
+		}
+		mer=mer+spmer;
+		fill(26,26,26);
+        circle(mer,mer,0.48);
+        // below venus
+        if(ven>390.202 || ven<109.798){
+			spven=spven*-1;
+			
+		}
+		ven=ven+spven;
+		fill(230,230,230);
+        circle(ven,ven,1.2104);
+        //below is earth
+        if(ear>390.616 || ear<109.384){
+			spear=spear*-1;
+			
+		}
+		ear=spear+ear;
+		fill(0,0,250);
+        circle(ear,ear,1.275);
+        //below is mars
+         if(mar>391.399 || mar<108.601){
+			spmar=spmar*-1;
+			
+		}
+		mar=spmar+mar;
+		fill(250,61,0);
+        circle(mar,mar,0.67);
+        //below is jupter
+        if(jup>396.88 || jup<103.12){
+			spjup=spjup*-1;
+			
+		}
+		jup=spjup+jup;
+		fill(176,127,53);
+        circle(jup,jup,14.29);
+        //below is saturn
+        if(sat>403.455 || sat<96.545){
+			spsat=spsat*-1;
+			
+		}
+		sat=spsat+sat;
+		fill(176,127,53);
+        circle(sat,sat,12.053);
+        //below is uranus
+        if(ura>417.845 || ura<82.155){
+			spura=spura*-1;
+			
+			
+		}
+		ura=spura+ura;
+		fill(85,128,170);
+        circle(ura,ura,5.1118);
+        //below is neptune
+        if(nep>434.071 || nep<65.929){
+			spnep=spnep*-1;
+			
+		}
+		nep=spnep+nep;
+		fill(54,104,150);
+        circle(nep,nep,4.95);
+       
+        
+        
+		
+
+    }
+    
+    
+    </script>
+    </body>

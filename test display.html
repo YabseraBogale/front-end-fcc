@@ -1,0 +1,35 @@
+<body>
+	<h1>hello</h1>
+	<script>
+		function stringSwap (str){
+				let newstr=str;
+				for(let i=0,j=str.length-1;i<str.length && str.length;i++,j--){
+					if(str[i]!==str[j]){
+						newstr[i]=str[j];
+						newstr[j]=str[i];
+					}
+
+
+				}
+				return newstr;
+		}
+		let word,ascword;
+		ascword="";
+		let spa;
+		for(let i=0;i<10000;i++){
+			word=Math.round(Math.random(65,92)*100);
+			spa=Math.round(Math.random(1,10)*10);
+			if(word>=65 && word <91){
+				ascword+=String.fromCharCode(word);
+			}
+			else{
+       
+				ascword+=" ";
+			}
+    
+   
+		}
+		
+		document.write(stringSwap("hello world"),ascword);
+	</script>
+	</body>

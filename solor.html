@@ -1,0 +1,99 @@
+<html>	
+<head>
+<script src="p5.js"></script>
+<script src="p5.min.js"></script>
+</head>
+<body>
+<script>
+function setup() {
+  createCanvas(700, 700);
+  
+}//the corr of mercuy
+let merx=450.36;
+let spmerx=0.47;
+// the corr of venu
+let verx=406.72;
+let spverx=0.35;
+//the corr of ear
+let earx=409.3;
+let spearx=0.29;
+//the corr of mars
+let marx=414.16;
+let spmars=0.24;
+//the corr of jup
+let jupx=448.38;
+let spjupx=0.13;
+//the corr of sata
+let satx=455.09;
+let spsatx=0.096;
+//the corr of uran
+let uarx=578.4;
+let spuarx=0.0681;
+//the corr of neptu
+let nepx=679.44;
+let spnepx=0.0543;
+function draw() {
+	background(0,0,0);
+	circle(400,400,100);
+	fill(250,0,0);
+	//mercury
+	if(merx>400.36 || merx<449.64){
+		spmerx=spmerx*-1;
+	}
+	merx=merx+spmerx;
+	circle(merx,merx,2);
+	fill(26,26,26);
+	//venus
+	if(verx >406.72 || verx<393.28){
+		spverx=spverx*-1;
+	}
+	verx=verx+spverx;
+	circle(verx,verx,6);
+	fill(230,230,230);
+	//earth
+	if(earx >409.3 || earx<390.7){
+		spearx=spearx*-1;
+	}
+	earx=earx+spearx;
+	circle(earx,earx,6);
+	fill(47,106,105);
+	//mars
+	if(marx>414.16 || marx< 385.84){
+		spmars=spmars*-1;
+	}
+	marx=marx+spmars;
+	circle(marx,marx,3);
+	fill(153,61,230);
+	//jupter
+	if(jupx>448.38 || jupx<350.62){
+		spjupx=spjupx*-1;
+	}
+	jupx=jupx+spjupx;
+	circle(jupx,jupx,69);
+	fill(176,127,53);
+	//satrun
+	if(satx>455.09 || satx<344.91){
+		spsatx=spsatx*-1;
+	}
+	satx=satx+spsatx;
+	circle(satx,satx,58);
+	fill(176,143,54);
+	//uranus
+	if(uarx>578.4 || uarx<221.6){
+		spuarx=spuarx*-1;
+	}
+	uarx=uarx+spuarx;
+	circle(uarx,uarx,25);
+	fill(85,128,170);
+	//neptune
+	if(nepx>679.44 || nepx<121){
+		spnepx=spnepx*-1;
+	}
+	nepx=nepx+spnepx;
+	circle(nepx,nepx,24);
+	fill(54,104,150);
+}
+
+</script>
+</body>
+</html>
