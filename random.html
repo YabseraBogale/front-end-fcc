@@ -1,0 +1,39 @@
+<html>
+<head>
+<script src="p5.js"></script>
+<script src="p5.min.js"></script>
+</head>
+<body>
+<script>
+	let x=200;
+	let y=200;
+	let w=200;
+	let z=200;
+	let speed=1;
+function setup(){
+	
+	createCanvas(400,400);
+	
+	
+	}
+function draw(){
+	background(0,100,0);
+	line(x,z,y,w);
+	circle(y,x,y,w);
+	line(y,z,x,w);
+	triangle(y,w,x);
+	fill(0,120,0);
+	if(x>400 || x<0){
+		speed=speed*-1
+		//x=random(100,350);
+	
+	}
+	x=speed+x;
+	y=speed+y;
+	
+	
+	}
+
+</script>
+</body>	
+</html>

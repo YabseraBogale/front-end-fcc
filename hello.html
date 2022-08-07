@@ -1,0 +1,36 @@
+<head>
+<script src="p5.js"></script>
+<script src="p5.min.js"></script>
+</head>
+<body>
+<script>
+let x,y,z,w;
+x=100;
+y=100;
+z=100;
+w=100;
+function setup() {
+		createCanvas(400, 400);
+		
+	}
+console.log("hello world");
+let speed =4;
+function draw() {
+  
+	//rect(x,y,z,w);
+	background(0,0,0);
+	circle(x,x,x);
+	//arc(x,y,w,z,0,HALF_PI*4);
+	//triangle(x,y,z,x,y,z);
+	fill(0,111,243);
+	if(height < x || x<0){
+		speed= speed*-1;
+		
+		}
+	
+	x = x + speed;
+  
+	}	
+</script>		
+</body>
+	

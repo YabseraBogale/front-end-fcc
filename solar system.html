@@ -1,0 +1,65 @@
+<html>
+<head>
+<script src="p5.js"></script>
+<script src="p5.min.js"></script>
+</head>
+<body>
+<script> 
+function setup() {
+  createCanvas(500, 500);
+  background(0,0,0);
+}
+// the corr merc
+let merx=236;
+let spmer=3;
+//the corr of venus
+let venx=267;
+let spv=2;
+// the corr earth
+let earx=293;
+let spear=1;
+// the corr mars
+let marx=341;
+let spmar=0.5;
+function draw() {
+  
+  //the sun
+  circle(200,200,50);
+  //mercury color
+  fill(26,26,26);
+  //mercury
+  if(merx>236 || merx<154){
+    spmer=spmer*-1;
+  }
+  merx=merx+spmer;
+  circle(merx,merx,10);
+  //the venus color
+  fill(230,230,0);
+  //venus
+  if(venx>267 || venx<123){
+    spv=spv*-1;
+  }
+  venx=venx+spv;
+  circle(venx,venx,15);
+  // the color of earth
+  fill(0,0,250);
+  //earth
+  if(earx>293 || earx<107){
+          
+      spear=spear*-1; 
+   }
+  earx=earx+spear;
+  circle(earx,earx,20);
+  //the color of mars
+  fill(153,61,0);
+  if(marx>341 || marx<141){
+		spmar=spmar*-1;
+	}
+	marx=marx+spmar;
+	circle(marx,marx,18);
+	//the color of sun
+	fill(250,0,0);
+}
+</script>
+</body>
+</html>
