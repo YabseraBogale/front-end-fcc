@@ -1,0 +1,29 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Aug 17 09:55:41 2022
+
+@author: yabsera
+"""
+
+<html>
+<head>
+</head>
+<body>
+<script>
+function setup() {
+  createCanvas(400, 400,[WEBGL]);
+}
+let angle=0;
+function draw() {
+  background(0);
+  rotateY(angle);
+  rotateX(angle);
+  rotateZ(angle);
+  fill(255,0,0);
+  rect(0,100,0,100);
+  angle+=0.03;
+}
+</script>
+</body>
+</html>
