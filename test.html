@@ -1,27 +1,71 @@
-<html>
-<head>
-<script src="p5.js"></script>
-<script src="p5.min.js"></script>	
-</head>
-<body>
-<script>
-let word,ascword;
-ascword="";
-let spa;
-for(let i=0;i<10000;i++){
-    word=Math.round(Math.random(65,92)*100);
-    spa=Math.round(Math.random(1,10)*10);
-    if(word>=65 && word <91){
-            ascword+=String.fromCharCode(word);
-    }
-    else{
-       
-        ascword+=" ";
-    }
-    
-   
-}
-document.write(ascword);
-</script>
-</body>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, inital-scale=1.0" />
+		<title>twoD.com</title>
+		<link rel="stylesheet" href="style.css"/>
+		
+		</head>
+	<body>
+		<main>
+			
+				<div class="big-wrapper">
+					<header>
+						<div class="container">
+						<div class="logo">
+							<img src="./image/logo.ico" alt="logo">
+							
+						
+						</div>
+						<div class="links">
+							<ul>
+								<li><a href="#" class="btn">clients</a></li>
+								<li><a href="#" class="btn">project</a></li>
+								<li><a href="#" class="btn">shop</a></li>
+								
+								
+							</ul>
+						
+						</div>
+						</div>
+					</header>
+					<div class="showcase-area">
+						<div class="container">
+							<div class="left">
+								<div class="big-title">
+								<h1>Futuer is here,</h1>
+								<h1>let us desgin it for you</h1>
+								</div>
+								<p class="text">
+									A design is a plan or specification for the construction of an object
+									or process or the result of that plan or specification 
+									in the form of a prototype, product, or process. 
+									The verb to design expresses the process of developing a design.
+									for the implementation of an activity or process or 
+								</p>
+							
+							</div>
+							<div class="right">
+								<img src="./image/home.ico" alt="home" class="person" />
+							</div>
+						
+						</div>
+						
+						
+					<div class="bottom-area">
+						<div class="container">
+							
+							
+						</div>
+					
+					</div>
+					
+					</div>
+				</div>
+				
+		</main>
+		<script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
+	</body>
 </html>
