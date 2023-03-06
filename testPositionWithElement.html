@@ -1,0 +1,32 @@
+<html>
+	<head>
+		</head>
+		<body>
+    <div id="target">
+        <p>Click the button</p>
+      
+      
+        <button onclick="getPoint()">
+            Click
+        </button>
+      
+        <p id="output"></p>
+      
+    </div>
+      
+    <script>
+        function getPoint() {
+            var target = document
+                .getElementById("target");
+          
+            var output = document
+                .getElementById("output");
+            
+            target.style.color="red";
+          
+            output.innerHTML = "offsetTop: "
+                    + target.offsetTop;
+        }
+    </script>
+</body>
+	</html>
