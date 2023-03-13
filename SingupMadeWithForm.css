@@ -1,0 +1,17 @@
+.signup{
+
+    color:white;
+    margin:auto;
+    top:40px;
+    position: relative;
+    width: 100px;
+    padding: 100px;
+    height:100px;
+    right: 50px;
+    color:black;
+    background-color: gold;
+
+}
+.body{
+    background-color:darkblue;
+}
