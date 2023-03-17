@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <title>MDN Example</title>
+    <style>
+		body{
+				display:grid;
+				place-items: center;
+				
+		}
+    </style>
+    </head>
+    <body>
+		<div class="test">
+		<form>
+			<p>What Do I Like ?</p>
+			<input id="input" type="text"></input>
+			</form>
+			<button onClick="Input()">you Like</button>
+		</div>
+		
+		<script type="text/javascript" defer>
+			function Input(){
+					let input=document.getElementById("input")
+					if(input.value=="Yabsera"){
+						document.write("You Are Right")
+					}
+					else{
+						document.write("You Are Wrong")
+					}
+			}
+		</script>
+  </body>
+</html>
