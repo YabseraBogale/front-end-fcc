@@ -1,13 +1,9 @@
-div{
-	
-	top: 5px;
-	border:2px solid black;
-	width: 400px;
-	overflow: hidden;
-	background:yellow;
-	border-radius:40px;
-	position: absolute;
-	top: 30%;
-	left: 30%;
-	margin: -25px 0 0 -25px;
+body{
+    background-color: rgb(46, 44, 44);
+}
+.main{
+    display: grid;
+    place-items: center;
+    color: whitesmoke;
+    font-family:'Times New Roman', Times, serif;
 }
