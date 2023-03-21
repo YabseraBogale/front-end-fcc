@@ -1,0 +1,12 @@
+body{
+    background-color: rgb(46, 44, 44);
+}
+.main{
+    display: grid;
+    place-items: center;
+    color: whitesmoke;
+    font-family:'Times New Roman', Times, serif;
+    height: 100vh;
+    min-height: 100%;
+    margin: 0;
+}
