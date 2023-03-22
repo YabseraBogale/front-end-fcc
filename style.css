@@ -1,9 +1,18 @@
 body{
-    background-color: rgb(46, 44, 44);
+    background-color: rgb(49, 42, 45);
+    color: antiquewhite;
 }
+
 .main{
+
     display: grid;
-    place-items: center;
-    color: whitesmoke;
-    font-family:'Times New Roman', Times, serif;
+    margin: auto;
+    position: relative;
+    width: 50%;
+
+}
+
+.item{
+    
+    
 }
