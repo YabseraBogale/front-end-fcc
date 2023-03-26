@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Styling Test</title>
+</head>
+<body>
+    <div class="dom">
+        <h1>Test</h1>
+        <p>Testing Dom Object Manuplation</p>
+    </div>
+    <div class="answers">
+            <p>Testing</p>
+    </div>
+    <script type="text/javascript">
+
+        let answer=document.querySelectorAll(".dom")
+        let answers=document.querySelector(".answers")
+        answer.style.offsetHeight="39px"
+        console.log(answers)
+        
+    </script>
+    
+</body>
+</html>
