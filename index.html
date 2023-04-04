@@ -4,49 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Personal Color Mode</title>
 </head>
-<body>
-   <div class="todo">
-       <div class="item">
-          <h1>todo</h1>
-          <input type="text" id="app"/>
-          <button onclick="App()">enter</button>
-       </div>
-   </div>
-  
-   <div id="list">
-        
-    </div>
-   
-   <style>
-       *{
-           margin: auto;
-           padding: auto;
-       }
-       .todo{
-           display: grid;
-           place-content:center;
-           background-color: cadetblue;
-       }
-       #list{
-           background-color: blueviolet;
-           display: flex;
-           place-content:center;
-       }
-       
-   </style> 
-   <script>
-       function App(){
-        let app=document.getElementById("app")
-        let list=document.getElementById("list")
-        list.innerHTML+="<p>"+app.value+"</p><button>delete</button>"
-        
-       
-       }
-       
-       
-   </script>
+<body id="body">
+    <center>
+        <p>Background Color <input type="text" id="background"></p>
+        <p>Text Color <input type="text" id="textColor"></p>
+        <button onclick="App()">Change</button>
+    </center>
+    <script>
+        function App(){
+            let bg=document.getElementById("background").value
+            let Cc=document.getElementById("textColor").value
+            let bgre=document.getElementById("body").style.backgroundColor
+            let Ccre=document.getElementById("body").style.color
+            console.log(Ccre,bgre);
+            document.getElementById("body").style.backgroundColor=bg
+            document.getElementById("body").style.color=Cc
+            
+        }
+    </script>
 </body>
 </html>
