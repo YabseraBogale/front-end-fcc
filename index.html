@@ -4,25 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Color Mode</title>
+    <title>Ip Assigment</title>
 </head>
-<body id="body">
-    <center>
-        <p>Background Color <input type="text" id="background"></p>
-        <p>Text Color <input type="text" id="textColor"></p>
-        <button onclick="App()">Change</button>
-    </center>
-    <script>
-        function App(){
-            let bg=document.getElementById("background").value
-            let Cc=document.getElementById("textColor").value
-            let bgre=document.getElementById("body").style.backgroundColor
-            let Ccre=document.getElementById("body").style.color
-            console.log(Ccre,bgre);
-            document.getElementById("body").style.backgroundColor=bg
-            document.getElementById("body").style.color=Cc
-            
-        }
-    </script>
+<body>
+    <nav align="right">
+        <a href="#">Home</a>
+        <a href="#">List</a>
+        <a href="#">Contact</a>
+    </nav>
 </body>
+<style>
+
+    center{
+        color: gold;
+        padding: 10%;
+        font-size: 30px;
+    }
+   
+    a{
+        color:gold;
+        background-color: purple;
+        border-radius: 30%;
+    }
+    body{
+        background-image: url('./image/29982263.jpg');
+        background-position: center 32%;
+        background-attachment:fixed;   
+        background-size: cover;
+    }
+    pre{
+        color: gold;
+    }
+
+</style>
 </html>
