@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson 6</title>
+</head>
+<body>
+    <form action="" method="post" id="" name="">
+        <fieldset>
+            <legend >
+                Personal details 
+            </legend>
+            <label for="fname">
+                First Name: <input placeholder="First Name" type="text" name="fname" width=25  maxlength="15"/>
+            </label>
+            <br/><br/>
+            <label for="lname">
+               Last Name:  <input placeholder="Last Name" type="text" name="fname"/ >
+            </label>
+            <br/><br/>
+            <label for="dob">
+                data of birth: <input type="date" name="dob"/>
+            </label>
+            <br/>
+            <br/>
+            <label for="Gender">
+                Gender <input type="radio" name="gender" id="" checked value="male" />Male &nbsp;
+                 <input type="radio" name="gender" id="" />female &nbsp;
+            </label>
+            <br/>
+            <br/>
+            Select country: 
+            <select name="country" id="">
+                <option value="">--select country--</option>
+                <option value="Albanina">
+                    Albanina
+                </option>
+                <option value="Ethiopa">
+                    Ethiopa
+                </option>
+                <option value="China">
+                    China
+                </option>
+                <option value="America" selected>
+                    America
+                </option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Other Information</legend>
+              <label for="email">
+               Email: <input type="email" name="Email" id="" required/>
+              </label>
+              <br>
+              <br>
+              <label for="telephone">
+                  Telephone: <input type="tel" name="telephone" id="">
+              </label>
+              <br>
+              <br>
+              <label for="hobby">
+                  Hobby:
+                  <input type="checkbox" name="hobby" id=""> reading
+                  <input type="checkbox" name="hobby" id=""> playing
+                  <input type="checkbox" name="hobby" id=""> football
+                  <input type="checkbox" name="hobby" id=""> other
+              </label>
+              <br>
+              <br>
+              <label for="url">
+                  Enter web address :
+                  <input type="url" name="url" id="">
+              </label>
+              <br>
+              <br>
+              <label for="photo">
+                  Enter Image
+                  <input type="image" src="" alt="">
+              </label>
+              <br>
+              <br>
+              <label for="cv">
+                  Enter Your CV: <input type="file" name="doc" id="">
+              </label>
+              <br>
+              <br>
+              Enter your Comment here:
+              <br>
+              <label for="comment">
+                  <textarea placeholder="TALK LESS" name="Comment" id="" cols="30" rows="10" maxlength="140"></textarea>
+              </label>
+              <br>
+              <br>
+              <label for="password">
+                  Enter password: <input type="password" name="password" id=""/>
+              </label>
+              <br>
+              <br>
+              <label for="cpassword">
+                Conform password: <input type="password" name="cpassword" id=""/>
+                <br>
+                <br>
+                <input type="submit" value="regsister" name="regsister">
+                <input type="reset" value="Cancel" name="reset">
+            </label>
+            <label for="star">
+                <input type="range" name="star" id="" max="5" min="0">
+            </label>
+        </fieldset>
+    </form>
+</body>
+</html>
