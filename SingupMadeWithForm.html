@@ -4,6 +4,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
     </head>
+    <p id="Test"></p>
     <body class="body">
         <div class="signup">
             <form>
@@ -16,5 +17,15 @@
         </div>
        
         <script src="app.js"></script>
+        <script type="text/javascript">
+            if(navigatior.appName=="Chrome"){
+                let App=document.getElementById("Test");
+                App.innerHtml="Chrome"
+            }
+            else{
+                document.write("123")
+                
+            }
+        </script>
         </body>
     </html>
