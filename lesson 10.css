@@ -1,0 +1,71 @@
+h1, h2, h3{
+
+    font-weight: 10%;
+    margin:0px;
+    color: #0088dd;
+}
+
+body{
+    padding: 20px;
+}
+
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 258%;
+    text-shadow: 2px,2px,3px,#666666;
+}
+h2{
+    font-size: 90%;
+    letter-spacing: 0.2em;
+    text-transform: uupercase;
+    font-family: 'Courier New', Courier, monospace,sans-serif;
+}
+h3{
+    font-size: 150%;
+}
+p{
+    font-family: 'Courier New', Courier, monospace,sans-serif;
+    line-height: 1.4em;
+    color: #cccccc;
+}
+p.fline:first-line{
+    font-weight: bold;
+    font-size: 200%;
+}
+
+.dropcap:first-letter{
+    font-size: 200%;
+    font-weight: bold;
+    color:hsl(300, 9%, 47%);
+}
+
+.specfic{
+    
+    font-style: italic;
+    text-align: right;
+    line-height: 100%;
+
+
+}
+
+
+
+a.one:visited{
+    color:rebeccapurple;
+}
+
+a:link{
+    color: green;
+}
+
+a:active{
+    color:rgb(175, 28, 28);
+}
+
+a:hover{
+    text-decoration: underline;
+}
+a{
+    text-decoration: none;
+    font-size: 20px;
+}
