@@ -1,0 +1,68 @@
+body{
+    
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(240, 240, 216);
+
+    
+}
+
+table{
+   
+    
+    width: 80%;
+    color:aliceblue;
+    border: 2px solid rgb(77, 51, 102);
+    border-radius: 5px;
+    text-align: center;
+    margin-left: 75px;
+    margin-right: 25px;
+ 
+}
+
+td:first-letter{
+    color: black;
+    text-transform: uppercase;
+}
+
+td:nth-child(3){
+    color:red;
+}
+
+td:nth-child(2){
+    color:green;
+}
+.table{
+    background-color: rgb(77, 51, 102);
+    border: 2px solid;
+    border-radius: 5px;
+}
+.welcome{
+    font-size: 50px;
+}
+tr{
+    text-align: center;
+    background-color: rgb(77, 51, 102); 
+}
+
+.ll{
+    display:grid;
+}
+
+
+legend{
+
+    text-align: center;
+    padding: 20px;
+    margin: 2px;
+
+}
+p{
+    text-align: center;
+}
+
+label{
+    align-items: center;
+    width: 50px;
+    margin: 15px;
+}
+
