@@ -1,70 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Dev/[game name]</title>
-</head>
-<body bgcolor="#272525">
-    <table width="80%" align="center" bgcolor="white" border="2px">
-        <tr align="center">
-            <td>
-                <a href="home.html">home</a>
-            </td>
-            
-            <td>
-                <a href="login.html">login</a>
-            </td>
-            <td>
-                <a href="gameList.html">gamelist</a>
-            </td>
-            <td>
-                <a href="#">Game</a>
-            </td>
-            <td>
-                <a href="shop.html">shop</a>
-            </td>
-        </tr>
-    </table>
-
-    <br>
-    <table align="center">
-        <tr>
-            <td align="center" width="5%">
-                <a href="#"></a>
-            </td>
-            <td align="center" width="40%">
-                <table>
-                    <tr>
-                        <td>
-                            <img src="./image/packman.gif" alt="packman">
-                        </td>
-                        <td>
-                            <img src="./image/mario.gif" alt="mario">
-                        </td>
-                        <td>
-                            <img src="./image/mincraft.gif" alt="mincraft">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="./image/vice.gif" alt="vice">
-                        </td>
-                        <td>
-                            <img src="./image/fifa.gif" alt="fifa">
-                        </td>
-                        <td>
-                            <img src="./image/callofduty.gif" alt="callofduty">
-                        </td>
-                    </tr>
-                </table>
-            </td>
-            <td align="center" width="5%">
-                <a href="#"></a>
-            </td>
-        </tr>
-    </table>
-
-</body>
+<html>
+	<head>
+	<title>Game</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<link rel="stylesheet" href="./style/game.css">
+	</head>
+	<body>
+		<nav>
+			<a href="gamehome.html">home</a>
+			<a href="gamelogin.html">login</a>
+			<a href="game.html">game</a>
+			<a href="gameshop.html">shop</a>
+		</nav>
+	<div class="main">
+		<h1>Snake Game</h1>
+		<div class="game">
+			<canvas id="board"></canvas>
+		</div>
+		<div class="footer">
+			contact us at
+			<div class="telephone">
+				Telephone: <b>+251920201161</b> or <b>+251943024740</b>
+			</div>
+			<div class="email">
+				Email: <b>gameDev@gmail.com</b>
+			</div>
+		</div>
+	</div>
+	<script src="./script/snake.js"></script>
+	</body>
 </html>
