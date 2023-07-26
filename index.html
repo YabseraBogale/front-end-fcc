@@ -2,87 +2,66 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <title>Resume</title>
 </head>
 <body>
-   
-    Enter Number <input type="number" name="" id="number">
-    <button>submit</button>
-    <p id="Answer"></p>
-
-    <script>
-      
-        function prime(number){
-            let list_prime=[]
-               for(let i=2;i<number;i++){
-        	    let yes_no=true
-		        for(let j=2;j<i;j++)
-		        {
-			
-			    if(i%j==0){
-				    yes_no=false
-			    }
-		    }
-		    if(yes_no==true){
-			    list_prime.push(i)
-		    }
-	    }   
-        return list_prime
-    }
-
-    function primeFormate(listofFactors){
-
-        let dict={}
-        for (let i=0;i<listofFactors.length;i++){
-            if(listofFactors[i] in dict){
-                dict[listofFactors[i]]+=1
-            }
-            else{
-                dict[listofFactors[i]]=1
-            }
-        }
-
-        return dict
-
-    }
-
-    function primeFactorization(number){
-        let list_prime=prime(number)
-        let factors=[]
-        let num=number
-        let i=0
-        while(num!=1){
-            while(i<list_prime.length){
-                if(num%list_prime[i]==0){
-                    factors.push(list_prime[i])
-                    num=num/list_prime[i]
-                }
-                i+=1
-            }
-            i=0
-        }
-
-        return factors
-    } 
-    function logical(number){
-        let numbers=primeFormate(primeFactorization(number))
-        let stringFactor=""
-        for(let i in numbers){
-            stringFactor+="("+i.toString()+"^"+numbers[i]+")"+"*"
-        }
-        let stringnumber=""
-        if (stringFactor[stringFactor.length-1]=="*"){
-            for(let i=0;i<=stringFactor.length-2;i++){
-                stringnumber+=stringFactor[i]
-           }
-        }
-        
-        return stringnumber
-    }
-    //console.log(logical(45))
-    
-</script>
+    <div class="body">
+        <div class="side">
+            <img src="./IMAGE.jpeg" alt="">
+            <div class="info">
+                <h3>
+                    CONTACT
+                </h3>
+                <ul>
+                    <li>
+                        Ethiopia Addis Ababa
+                    </li>
+                    <li>
+                        +251920201161
+                    </li>
+                    <li>
+                        yabserabogalercd30932013@gmail.com
+                    </li>
+                </ul>
+                <h3>
+                    EDUCATION
+                </h3>
+                <ul>
+                    <li>
+                        St.Marry University
+                    </li>
+                    <li>
+                        freecodecamp
+                    </li>
+                    <li>
+                        Ciscio Achedamy
+                    </li>
+                </ul>
+                <h3>
+                    SOCIAL
+                </h3>
+                <ul>
+                    <li>
+                        <a href="https://github.com/YabseraBogale">YabseraBogale</a>
+                    </li>
+                    <li>
+                        <a href="">twitter</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <h1>
+                RESUME OF<br><b>YABSERA BOGALE</b>
+                <br>FULL STACK DEVELOPER
+            </h1>
+            <h2>
+                <u>PERSONAL SUMMERY</u>
+            </h2>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet alias nam reiciendis itaque vero, natus nulla fugit quidem nemo quae possimus officiis magni qui veritatis eum eaque fugiat. Autem sit iure officiis? Praesentium, rem sapiente mollitia veniam nam earum est. Odio consequatur perferendis hic iste mollitia saepe eveniet minima officiis quia laborum nihil explicabo deleniti, cum qui, sequi, quo error!
+        </div>
+    </div>
 </body>
 </html>
