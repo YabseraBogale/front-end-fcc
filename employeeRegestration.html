@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Regestration</title>
+</head>
+<body>
+    <form action="employeeRegestration.php" method="post">
+        <fieldset>
+            <legend>
+                Employee Regestration
+            </legend>
+            <table>
+                <tr>
+                    <td>
+                        First name
+                    </td>
+                    <td>
+                        <input type="text" name="firstName" id="firstName" placeholder="JOHN" required>
+                    </td>
+                    <td>
+                        Middle name
+                    </td>
+                    <td>
+                        <input type="text" name="middleName" id="middleName" placeholder="Wick" require>
+                    </td>
+                    <td>
+                        Last name
+                    </td>
+                    <td>
+                        <input type="text" name="lastName" id="lastName" placeholder="Kills" require>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Email
+                    </td>
+                    <td>
+                        <input type="email" name="email" id="email" placeholder="johnwick@gmail.com" require>
+                    </td>
+                    <td>
+                       company Telephone
+                    </td>
+                    <td>
+                        <input type="tel" name="companyTelePhone" id="telePhone" placeholder="+251910101010" require>
+                    </td>
+                    <td>
+                        personal Telephone
+                    </td>
+                    <td>
+                        <input type="tel" name="personalTelephone" id="personalTelephone" placeholder="+251910101010" require>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Gender
+                    </td>
+                    <td>
+                       Male <input type="radio" name="Gender" id="Male" vlaue="M">
+                       Female <input type="radio" name="Gender" id="Male" vlaue="f">
+                    </td>
+                    <td>
+                        Date of Birth
+                    </td>
+                    <td>
+                        <input type="date" name="dateOfBirth" id="dateOfBirth" require>
+                    </td>
+                    <td>
+                        Date of Employeement
+                    </td>
+                    <td>
+                        <input type="date" name="dateOfEmployeement" id="dateOfEmployeement" require>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Branch
+                    </td>
+                    <td>
+                        <input type="text" name="branch" id="branch" placeholder="bole" require>
+                    </td>
+                    <td>
+                        Deparetement
+                    </td>
+                    <td>
+
+                        <input type="text" name="department" id="department" placeholder="Human Resource" require>
+                    </td>
+                    <td>
+                        Education Level
+                    </td>
+                    <td>
+                        <input type="text" name="educationLevel" id="educationLevel" placeholder="Degree" require>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Salary
+                    </td>
+                    <td>
+                        <input type="number" name="salary" id="salary" require>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>
+                Emergency Contact
+            </legend>
+            <table>
+                <tr>
+                    <td>
+                        First name
+                    </td>
+                    <td>
+                        <input type="text" name="firstName" id="firstName" placeholder="JOHN" required>
+                    </td>
+                    <td>
+                        Middle name
+                    </td>
+                    <td>
+                        <input type="text" name="middleName" id="middleName" placeholder="Wick" require>
+                    </td>
+                    <td>
+                        Last name
+                    </td>
+                    <td>
+                        <input type="text" name="lastName" id="lastName" placeholder="Kills" require>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Phone Number
+                    </td>
+                    <td>
+                        <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="+25110101010" require>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <p>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Cancel">
+        </p>
+    </form>
+</body>
+</html>
