@@ -1,9 +1,8 @@
-#before sudo nano /etc/apt/sources.list
-deb http://deb.debian.org/debian bookworm main
-deb-src http://deb.debian.org/debian bookworm main
-
-deb http://deb.debian.org/debian-security/ bookworm-security main
-deb-src http://deb.debian.org/debian-security/ bookworm-security main
-
-deb http://deb.debian.org/debian bookworm-updates main
-deb-src http://deb.debian.org/debian bookworm-updates main
+step 1:
+CREATE USER 'yabsera'@'localhost' IDENTIFIED BY 'Deathandlife135792468';
+step 2:
+GRANT CREATE, ALTER, DROP, INSERT, UPDATE, DELETE, SELECT, REFERENCES, RELOAD on *.* TO 'yabsera'@'localhost' WITH GRANT OPTION;
+step 3:
+FLUSH PRIVILEGES;
+setp 4:
+SHOW GRANTS FOR 'yabsera'@'localhost';
