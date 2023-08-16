@@ -1,0 +1,15 @@
+*{
+	padding: 10px;
+	
+}
+
+h2{
+	color: orange;
+}
+
+
+textarea{
+	resize:none;
+	width:400px;
+	height: 400px;
+}
